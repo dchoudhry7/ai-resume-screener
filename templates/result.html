@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <div class="card p-4 shadow">
+
+        <h2 class="text-center mb-4">Analysis Result</h2>
+
+        <!-- ✅ SCORE -->
+        <h4 class="text-center">Match Score: {{score}}%</h4>
+
+        <div class="progress my-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: {{score}}%">
+                {{score}}%
+            </div>
+        </div>
+
+        <!-- ✅ SIMILARITY -->
+        <p><strong>TF-IDF Similarity:</strong> {{tfidf}}%</p>
+        <p><strong>Semantic Similarity:</strong> {{semantic}}%</p>
+
+        <hr>
+
+        <!-- ✅ SKILLS SECTION -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <h5 class="text-success">Matched Skills</h5>
+                <ul>
+                    {% for skill in matched %}
+                        <li>{{skill}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h5 class="text-danger">Missing Skills</h5>
+                <ul>
+                    {% for skill in missing %}
+                        <li>{{skill}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- 🔥 FEEDBACK -->
+        <hr>
+
+        <h5>Feedback</h5>
+        <ul>
+            {% for f in feedback %}
+                <li>{{f}}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- 🚀 ROLE RECOMMENDATION -->
+        <hr>
+
+        <h5>Recommended Roles</h5>
+
+        {% if roles %}
+            <ul>
+                {% for role, score in roles %}
+                    <li><strong>{{role}}</strong> — {{score}}% match</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No strong role recommendations found.</p>
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
