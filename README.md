@@ -1,13 +1,13 @@
 # 🚀 AI Resume Screening System
-A machine learning-based web app that evaluates resumes and suggests suitable job roles.
+A machine learning-based web application that evaluates resumes against job descriptions and recommends suitable roles.
 
 ## 🔥 Features
-- Resume parsing (PDF)
-- TF-IDF similarity
-- Semantic similarity (Sentence Transformers)
-- Skill matching
-- Smart feedback system
-- Role recommendation engine
+- 📄 Resume Parsing (PDF)
+- 📊 TF-IDF Similarity
+- 🧠 Semantic Similarity (Sentence Transformers)
+- 🧩 Skill Matching
+- 💡 Smart Feedback System
+- 🎯 Role Recommendation Engine
 
 ## 🛠️ Tech Stack
 - Python
@@ -17,13 +17,5 @@ A machine learning-based web app that evaluates resumes and suggests suitable jo
 - HTML, CSS, Bootstrap
 
 ## ▶️ How to Run
-pip install -r requirements.txt  
+pip install -r requirements.txt
 python app.py
-
-## 📌 Description
-This project analyzes resumes against job descriptions and also recommends suitable roles based on extracted skills.
-
-## 🚀 Future Improvements
-- Multi-resume ranking  
-- Job recommendation with links  
-- Advanced NLP skill extraction  
