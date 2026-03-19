@@ -17,5 +17,6 @@ A machine learning-based web application that evaluates resumes against job desc
 - HTML, CSS, Bootstrap
 
 ## ▶️ How to Run
+```bash
 pip install -r requirements.txt
 python app.py
