@@ -21,9 +21,6 @@ An AI-powered web application that analyzes resumes and evaluates them based on 
 
 ![App Screenshot-2](assets/ai-resume-2.png)
 
-### 🎥 Demo Video
-[Watch Demo](assets/ai-resume-screener.mp4)
-
 ---
 
 ## 🛠️ Tech Stack
