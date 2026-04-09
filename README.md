@@ -26,7 +26,7 @@ An AI-powered web application that analyzes resumes and evaluates them based on 
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS
-- **Backend:** Python (Flask/Django – mention yours)
+- **Backend:** Python (Flask/Django)
 - **AI/NLP:** Python, NLP libraries (like sklearn, nltk, etc.)
 - **Other:** Git, GitHub
 
